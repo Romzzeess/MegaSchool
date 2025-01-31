@@ -1,0 +1,36 @@
+2025-01-31 18:49:24 | INFO | Incoming request: GET http://localhost:8080/
+Request body: 
+2025-01-31 18:49:24 | INFO | Request completed: GET http://localhost:8080/
+Status: 404
+Response body: {"detail":"Not Found"}
+Duration: 0.003s
+2025-01-31 18:49:24 | INFO | Incoming request: GET http://localhost:8080/favicon.ico
+Request body: 
+2025-01-31 18:49:24 | INFO | Request completed: GET http://localhost:8080/favicon.ico
+Status: 404
+Response body: {"detail":"Not Found"}
+Duration: 0.001s
+2025-01-31 18:49:42 | INFO | Incoming request: POST http://158.160.130.157:8080/api/request
+Request body: {"query": "В каком городе находится главный кампус Университета ИТМО?\n1. Москва\n2. Санкт-Петербург\n3. Екатеринбург\n4. Нижний Новгород", "id": 1}
+2025-01-31 18:49:42 | INFO | Processing prediction request with id: 1
+2025-01-31 18:49:43 | ERROR | Internal error processing request 1: (URL('https://gigachat.devices.sberbank.ru/api/v1/chat/completions'), 401, b'{"status":401,"message":"Unauthorized"}\n', Headers({'server': 'SynGX', 'date': 'Fri, 31 Jan 2025 18:49:43 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '40', 'connection': 'keep-alive', 'x-request-id': '196106c7-77fc-4f4a-ab91-c4f61cf656fe', 'x-session-id': '60285c54-6947-4993-8f0c-d259f495caa7', 'allow': 'GET, POST', 'strict-transport-security': 'max-age=31536000; includeSubDomains'}))
+2025-01-31 18:49:43 | INFO | Request completed: POST http://158.160.130.157:8080/api/request
+Status: 500
+Response body: {"detail":"Internal server error"}
+Duration: 1.041s
+2025-01-31 18:53:53 | INFO | Incoming request: POST http://158.160.130.157:8080/api/request
+Request body: {"query": "В каком городе находится главный кампус Университета ИТМО?\n1. Москва\n2. Санкт-Петербург\n3. Екатеринбург\n4. Нижний Новгород", "id": 1}
+2025-01-31 18:53:53 | INFO | Processing prediction request with id: 1
+2025-01-31 18:53:54 | ERROR | Internal error processing request 1: (URL('https://gigachat.devices.sberbank.ru/api/v1/chat/completions'), 401, b'{"status":401,"message":"Unauthorized"}\n', Headers({'server': 'SynGX', 'date': 'Fri, 31 Jan 2025 18:53:54 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '40', 'connection': 'keep-alive', 'x-request-id': '989bdee5-599f-4e44-8249-a168b48db163', 'x-session-id': '88fc0522-87fd-4f89-98b4-611795339be4', 'allow': 'GET, POST', 'strict-transport-security': 'max-age=31536000; includeSubDomains'}))
+2025-01-31 18:53:54 | INFO | Request completed: POST http://158.160.130.157:8080/api/request
+Status: 500
+Response body: {"detail":"Internal server error"}
+Duration: 0.969s
+2025-01-31 19:23:08 | INFO | Incoming request: POST http://158.160.130.157:8080/api/request
+Request body: {"query": "В каком городе находится главный кампус Университета ИТМО?\n1. Москва\n2. Санкт-Петербург\n3. Екатеринбург\n4. Нижний Новгород", "id": 1}
+2025-01-31 19:23:08 | INFO | Processing prediction request with id: 1
+2025-01-31 19:23:10 | INFO | Successfully processed request 1
+2025-01-31 19:23:10 | INFO | Request completed: POST http://158.160.130.157:8080/api/request
+Status: 200
+Response body: {"id":1,"answer":2,"reasoning":"Из информации на сайте","sources":["https://itmo.ru/ru/map/karta_korpusov.htm"]}
+Duration: 2.039s
