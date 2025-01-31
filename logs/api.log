@@ -34,3 +34,70 @@ Request body: {"query": "В каком городе находится глав�
 Status: 200
 Response body: {"id":1,"answer":2,"reasoning":"Из информации на сайте","sources":["https://itmo.ru/ru/map/karta_korpusov.htm"]}
 Duration: 2.039s
+2025-01-31 19:36:14 | INFO | Incoming request: POST http://158.160.130.157:8080/api/request
+Request body: {"query": "В каком году Университет ИТМО был включён в число Национальных исследовательских университетов России?\n1. 2007\n2. 2009\n3. 2011\n4. 2015", "id": 1}
+2025-01-31 19:36:14 | INFO | Processing prediction request with id: 1
+2025-01-31 19:36:16 | INFO | Successfully processed request 1
+2025-01-31 19:36:16 | INFO | Request completed: POST http://158.160.130.157:8080/api/request
+Status: 200
+Response body: {"id":1,"answer":22009,"reasoning":"Из информации на сайте","sources":[]}
+Duration: 1.447s
+2025-01-31 19:59:20 | INFO | Incoming request: POST http://158.160.130.157:8080/api/request
+Request body: {"query": "В каком году Университет ИТМО был включён в число Национальных исследовательских университетов России?\n1. 2007\n2. 2009\n3. 2011\n4. 2015", "id": 1}
+2025-01-31 19:59:20 | INFO | Processing prediction request with id: 1
+2025-01-31 19:59:23 | INFO | Successfully processed request 1
+2025-01-31 19:59:23 | INFO | Request completed: POST http://158.160.130.157:8080/api/request
+Status: 200
+Response body: {"id":1,"answer":2,"reasoning":"Из информации на сайте","sources":["https://ru.wikipedia.org/wiki/%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_%D0%98%D0%A2%D0%9C%D0%9E","https://ru.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%98%D0%A2%D0%9C%D0%9E"]}
+Duration: 2.793s
+2025-01-31 20:00:53 | INFO | Incoming request: POST http://158.160.130.157:8080/api/request
+Request body: {"query": "В каком году Университет ИТМО был включён в число Национальных исследовательских университетов России?\n1. 2007\n2. 2009\n3. 2011\n4. 2015", "id": 1}
+2025-01-31 20:00:53 | INFO | Processing prediction request with id: 1
+2025-01-31 20:00:55 | INFO | Successfully processed request 1
+2025-01-31 20:00:55 | INFO | Request completed: POST http://158.160.130.157:8080/api/request
+Status: 200
+Response body: {"id":1,"answer":2,"reasoning":"Из информации на основании источников","sources":["https://ru.wikipedia.org/wiki/%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_%D0%98%D0%A2%D0%9C%D0%9E","https://ru.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%98%D0%A2%D0%9C%D0%9E"]}
+Duration: 2.713s
+2025-01-31 20:01:25 | INFO | Incoming request: POST http://158.160.130.157:8080/api/request
+Request body: {"query": "В каком году Университет ИТМО был включён в число Национальных исследовательских университетов России?", "id": 1}
+2025-01-31 20:01:25 | INFO | Processing prediction request with id: 1
+2025-01-31 20:01:28 | ERROR | Validation error for request 1: 1 validation error for PredictionResponse
+answer
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/int_type
+2025-01-31 20:01:28 | INFO | Request completed: POST http://158.160.130.157:8080/api/request
+Status: 400
+Response body: {"detail":"1 validation error for PredictionResponse\nanswer\n  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.10/v/int_type"}
+Duration: 2.579s
+2025-01-31 20:08:22 | INFO | Incoming request: POST http://158.160.130.157:8080/api/request
+Request body: {"query": "В каком году Университет ИТМО был включён в число Национальных исследовательских университетов России?", "id": 1}
+2025-01-31 20:08:22 | INFO | Processing prediction request with id: 1
+2025-01-31 20:08:25 | INFO | Successfully processed request 1
+2025-01-31 20:08:25 | INFO | Request completed: POST http://158.160.130.157:8080/api/request
+Status: 200
+Response body: {"id":1,"answer":-1,"reasoning":"Университет ИТМО был включён в число Национальных исследовательских университетов России в **2009 году**.","sources":["https://ru.wikipedia.org/wiki/%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_%D0%98%D0%A2%D0%9C%D0%9E","https://itmo.ru/ru/page/211/istoriya_universiteta_itmo.htm"]}
+Duration: 2.755s
+2025-01-31 20:11:20 | INFO | Incoming request: POST http://158.160.130.157:8080/api/request
+Request body: {"query": "В каком году Университет ИТМО был включён в число Национальных исследовательских университетов России?", "id": 1}
+2025-01-31 20:11:20 | INFO | Processing prediction request with id: 1
+2025-01-31 20:11:22 | INFO | Successfully processed request 1
+2025-01-31 20:11:22 | INFO | Request completed: POST http://158.160.130.157:8080/api/request
+Status: 200
+Response body: {"id":1,"answer":-1,"reasoning":"Университет ИТМО был включён в число Национальных исследовательских университетов России в **2009 году**.","sources":["https://ru.wikipedia.org/wiki/%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_%D0%98%D0%A2%D0%9C%D0%9E","https://itmo.ru/ru/page/211/istoriya_universiteta_itmo.htm"]}
+Duration: 1.930s
+2025-01-31 20:11:33 | INFO | Incoming request: POST http://158.160.130.157:8080/api/request
+Request body: {"query": "В каком году Университет ИТМО был включён в число Национальных исследовательских университетов России?\n1. 2007\n2. 2009\n3. 2011\n4. 2015", "id": 1}
+2025-01-31 20:11:33 | INFO | Processing prediction request with id: 1
+2025-01-31 20:11:35 | INFO | Successfully processed request 1
+2025-01-31 20:11:35 | INFO | Request completed: POST http://158.160.130.157:8080/api/request
+Status: 200
+Response body: {"id":1,"answer":2,"reasoning":"Из информации на основании источников","sources":["https://ru.wikipedia.org/wiki/%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_%D0%98%D0%A2%D0%9C%D0%9E","https://itmo.ru/ru/page/211/istoriya_universiteta_itmo.htm"]}
+Duration: 1.981s
+2025-01-31 20:12:12 | INFO | Incoming request: POST http://158.160.130.157:8080/api/request
+Request body: {"query": "В каком городе находится главный кампус Университета ИТМО?\n1. Москва\n2. Санкт-Петербург\n3. Екатеринбург\n4. Нижний Новгород", "id": 1}
+2025-01-31 20:12:12 | INFO | Processing prediction request with id: 1
+2025-01-31 20:12:14 | INFO | Successfully processed request 1
+2025-01-31 20:12:14 | INFO | Request completed: POST http://158.160.130.157:8080/api/request
+Status: 200
+Response body: {"id":1,"answer":2,"reasoning":"Из информации на основании источников","sources":["https://ru.wikipedia.org/wiki/%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_%D0%98%D0%A2%D0%9C%D0%9E","https://itmo.ru/ru/map/karta_korpusov.htm"]}
+Duration: 2.130s
